@@ -1,0 +1,32 @@
+unit uMain;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.ExtCtrls, Vcl.Imaging.pngimage,
+  Vcl.StdCtrls, REST.Types, REST.Client, Data.Bind.Components, System.JSON,
+  Data.Bind.ObjectScope;
+
+type
+  TfrmCats = class(TForm)
+    pnMenu: TPanel;
+    imgCat: TImage;
+    btCatFact: TButton;
+    RESTClientCat: TRESTClient;
+    RESTRequestCat: TRESTRequest;
+    RESTResponseCat: TRESTResponse;
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  frmCats: TfrmCats;
+
+implementation
+
+{$R *.dfm}
+
+end.

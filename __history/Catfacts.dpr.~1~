@@ -1,0 +1,14 @@
+program Catfacts;
+
+uses
+  Vcl.Forms,
+  uMain in 'uMain.pas' {frmMenu};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.MainFormOnTaskbar := True;
+  Application.CreateForm(TfrmMenu, frmMenu);
+  Application.Run;
+end.
